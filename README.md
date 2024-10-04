@@ -10,4 +10,4 @@ Edit a Blog and make changes
 
 Delete a Blog
 
-NOTE : This Application does not use any Database. The server is hosted locally.
+NOTE : This Application does not use any Database. Hence, the data is stored locally.
