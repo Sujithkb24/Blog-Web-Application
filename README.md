@@ -1,5 +1,5 @@
 # Blog-Web-Application
-A simple web based application made purely using NodeJS, ExpressJS and EJS. 
+A simple web based Project made purely using NodeJS, ExpressJS and EJS. 
 
 Features : 
   1) Create a Blog
