@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs")%>
+<br>
+<div class="container"> 
+<% function BlogDisplay(){%>
+    <%if(locals.Data){%>
+        <% ArrayDetails.map((curElement, index) => { %>
+            <div>
+                <p><%= curElement%></p>
+                    <div class="methods">
+                        <div>
+                            <form action="/update" method="post">
+                            <button type="submit" name=action value=<%=index %> class="btn btn-primary">Edit</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form action="/delete" method="post">
+                            <button type="submit" name=action value=<%=index %> class="btn btn-primary">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        <%})}}%>
+<% BlogDisplay();%>
+</div>
