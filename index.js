@@ -2,7 +2,7 @@ import express from 'express'
 import bodyParser  from 'body-parser'
 import ejs from 'ejs'
 const app = express();
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const ArrayHolder=[];
 const ValueHolder=[];
 app.use(express.static("public"))
@@ -62,6 +62,6 @@ app.get("/index.ejs",(req,res)=>{
         value:""
     })
 })
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
   });
