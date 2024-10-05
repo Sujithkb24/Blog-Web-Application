@@ -2,7 +2,7 @@ import express from 'express'
 import bodyParser  from 'body-parser'
 import ejs from 'ejs'
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 const ArrayHolder=[];
 const ValueHolder=[];
 app.use(express.static("public"))
